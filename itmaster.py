@@ -1,4 +1,3 @@
-
 """ 
 * Ejercicio 001
 Escribir un programa que permita que el usuario ingrese su nombre. El programa debe emitir una salida con un mensaje de bienvenida que incluya el nombre ingresado.
@@ -7,12 +6,6 @@ Ejemplo de ejecución
 Ingrese su nombre: Juan
 Bienvenido Juan
 """
-""" 
-? nombre = input("Ingrese su nombre: ")
-? print("Bienvenido", nombre)
-"""
-
-
 """
 * Ejercicio 002
 Escribir un programa que solicite al usuario su nombre y su edad, y luego muestre por pantalla un mensaje que diga "Hola, [nombre]. Tu Hedad es [edad] años."
@@ -24,14 +17,6 @@ Ingrese su edad: 30
 Hola, Juan. Tu edad es 30 años.
 """
 """
-? nombre = input("Ingrese su nombre: ")
-? edad = input("Ingrese su edad: ")
-? print("Hola,",nombre, "te edad es ",edad) 
-"""
-
-
-
-""""
 Ejercicio 003
 Escribir un programa que solicite al usuario su nombre y su edad, después pida una cantidad de años y muestre por pantalla un mensaje que indique cuántos años tendrá la persona después de sumarle a su edad la cantidad de años ingresada. El mensaje debe tener el siguiente formato: 'Hola, [nombre]. Dentro de [cantidad] años tendrás [edad + cantidad] años'".
 
@@ -41,16 +26,12 @@ Escribir un programa que solicite al usuario ingresar tres numeros enteros.El pr
 
 Ejemplo: Si el usuario ingresa 1, 2 y 3, el programa debe mostrar por pantalla: "1 + 2 + 3 = 6".
 """
-# Escriba la solución aquí
-
 """
 Ejercicio 005
 Escribir un programa que solicite al usuario ingresar dos notas de un alumno. El programa debe mostrar por pantalla el promedio de las notas de la siguiente manera: "Notas: [nota1] , [nota2] ==> promedio: [(nota1+nota2)/2]".
 
 Ejemplo: Si el usuario ingresa 7 y 8, el programa debe mostrar por pantalla: "Notas: 7 , 8 ==> promedio: 7.5".
 """
-# Escriba la solución aquí
-
 """
 Ejercicio 006
 Escribir un programa que solicite al usuario ingresar tres notas de un alumno. El programa debe mostrar por pantalla las notas separadas por comas en un renglón y el promedio de las notas en el siguiente renglon.
@@ -63,8 +44,6 @@ Ejemplo de ejecución:
     Notas: 7, 8, 9
     Promedio: 8.0
 """
-# Escriba la solución aquí
-
 """
 Ejercicio 007
 Escribir un programa que permita ingresar un número entero. Debe mostrarse el número ingresado:
@@ -80,7 +59,7 @@ Ingrese un número entero: 5
 5 / 10 = 0.5
 5 ** 2 = 25
 """
-# Escriba la solución aquí
+
 
 """
 Ejercicio 008
@@ -131,6 +110,26 @@ print(a,b)
 
 # Escriba la solución aquí respetando los pasos descriptos en el enunciado
 """
+num1 = int(input("Ingrese un valor:   "))
+num2 = int(input("Ingrese un valor:   "))
+print("Valores: ", num1,num2)
+
+aux = num1
+num1 = num2
+num2 = aux
+print("intercambiados",num1,num2)
+
+num1,num2 = num2,num1
+print("intercambiados otra forma: ",num1,num2)
+
+a=10
+b=20
+print(a,b)
+a = a + b;
+b = a - b;
+a = a - b;
+print(a,b)
+
 
 """
 Ejercicio 010
@@ -227,7 +226,7 @@ Se leen por teclado el nombre del vendedor, la cantidad de ventas que realizó y
 """
 # Escriba alguna solución aquí
 """
-Ejercicio 016
+* Ejercicio 016
 Escribir un programa que permita al usuario ingresar un período de tiempo en segundos. Luego, el programa debe convertir ese período de tiempo a una forma más legible y comprensible para el usuario, expresando el resultado en días, horas, minutos y segundos. El resultado se mostrará en pantalla en un mensaje que indique la cantidad de segundos ingresados y su equivalente en días, horas, minutos y segundos.
 
 Ejemplo: 200000 segundos equivalen a 2 días, 7 horas, 33 minutos y 20 segundos.
@@ -241,7 +240,21 @@ minutos = (segundos % 3600) // 60 # 60 segundos = 1 minuto
 
 segundos_restantes = segundos % 60 # segundos restantes
 """
-# Escriba la solución aquí
+segundos = int(input("Ingrese la cantidad de segundos:   "))
+
+dias = segundos // 86400 # 86400 segundos = 1 día
+
+horas = (segundos % 86400) // 3600 # 3600 segundos = 1 hora
+
+minutos = (segundos % 3600) // 60 # 60 segundos = 1 minuto
+
+segundos_restantes = segundos % 60 # segundos restantes
+
+print(f'{segundos} equivalen a {dias} días, {horas} horas, {minutos} minutos, {segundos_restantes} segundos')
+print(f'{dias}:{horas}:{minutos}:{segundos_restantes}')
+
+
+
 """
 Ejercicio 017
 ¡Ayuda! Se me rompió el programa que convierte una cantidad de dinero en la cantidad mínima de billetes y monedas necesarios. Tengo todas las instrucciones necesarias, pero están todas mezcladas. ¿Podrías ayudarme a ordenarlas de manera correcta para que funcione el programa como debería? A lo mejor se me perdieron algunas instrucciones, ¿podrías agregarlas?
@@ -305,15 +318,56 @@ Escribir un programa que permita ingresar dos cadenas de caracteres e indicar si
 """
 # Escriba la solución aquí
 """
-Ejercicio 021
+* Ejercicio 021
 Escribir un programa que permita ingresar dos números enteros e indicar si el primero es mayor, menor o igual al segundo.
 """
-# Escriba la solución aquí
+
+# n1 = int(input("ingrese el primer número: "))
+# n2 = int(input("ingrese el segundo número: "))
+
+# if n1 > n2:
+#     print(" el mayor es: ", n1)
+# else:
+#     if n2 > n1:
+#         print(" el mayor es: ", n2)
+#     else:
+#         print(" son iguales ")
+    
+
 """
-Ejercicio 022
+* Ejercicio 022
 Escribir un programa que permita ingresar tres números enteros e indicar cual es el mayor.
 """
-# Escriba la solución aquí
+n1 = int(input("ingrese el primer número: "))
+n2 = int(input("ingrese el segundo número: "))
+n3 = int(input("ingrese el tercer número: "))
+
+""" 
+if n1 > n2:
+    if n1 > n3:
+        print(" el mayor es: ", n1)
+    else:
+        print(" el mayor es: ", n3)
+else:
+    if n2 > n1:
+        if n2 > n3:
+            print(" el mayor es: ", n2)
+        else:
+            print(" el mayor es: ", n3) """
+
+mayor = n1
+
+if n2 > mayor:
+    mayor = n2
+
+if n3 > mayor:
+    mayor = n3
+
+print('el mayor es: ', mayor)
+
+mayor = max(n1,n2,n3) # solo funciona con números!!!
+print("el numero mayor es: ",mayor)
+
 """
 Ejercicio 023
 Escribir un programa que permita ingresar tres números enteros y mostrar el mayor el menor y el valor que esta en medio.
@@ -370,7 +424,27 @@ F 	F 	F
 
 En resumen, el conector "and" se utiliza para crear expresiones lógicas que requieren que todas las condiciones sean verdaderas para que la expresión sea verdadera.
 """
-# Escriba la solución aquí
+edad = int(input("ongrese su edad: "))
+altura = float(input("ingrese su altura: "))
+
+EDAD_MINIMA = 10
+ALTURA_MINIMA = 1.60
+
+entraPorEdad = edad > EDAD_MINIMA
+entraPorAltura = altura > ALTURA_MINIMA
+entra = entraPorEdad and entraPorAltura
+
+if entra:
+    print("puedes ingresar")
+else:
+    if not entraPorEdad:
+        print("eres menor de 10 añor, no puede entrar")
+    if not entraPorAltura:
+        print("eres menor de 1.60, no puede entrar")
+        
+
+
+
 """
 Ejercicio 025
 Para acceder a cierta atracción, alcanza con que se cumpla solamente una de las siguientes condiciones: ser mayor de 6 años o medir más de 1,50 metros.
