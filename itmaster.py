@@ -59,8 +59,6 @@ Ingrese un número entero: 5
 5 / 10 = 0.5
 5 ** 2 = 25
 """
-
-
 """
 Ejercicio 008
 Escribir un programa que permita ingresar el valor monetario de una hora de trabajo y la cantidad de horas trabajadas por día, para calcular el salario semanal de un trabajador que trabaja todos los días hábiles y la mitad de las horas del día hábil los sábados, suponiendo que todas las horas tienen el mismo valor."
@@ -82,8 +80,6 @@ Como pensarlo:
 
 8- Mostrar el resultado del salario semanal en la pantalla.
 """
-# Escriba la solución aquí respetando los pasos descriptos en el enunciado
-
 """
 Ejercicio 009
 Escribir un programa que permita ingresar valores del mismo tipo para las variables num1 y num2. Una vez cargadas, mostrar ambas variables por pantalla, intercambiá sus valores (que lo cargado en num1 quede en num2, y viceversa) y volvé a mostrarlas actualizadas.
@@ -110,26 +106,6 @@ print(a,b)
 
 # Escriba la solución aquí respetando los pasos descriptos en el enunciado
 """
-num1 = int(input("Ingrese un valor:   "))
-num2 = int(input("Ingrese un valor:   "))
-print("Valores: ", num1,num2)
-
-aux = num1
-num1 = num2
-num2 = aux
-print("intercambiados",num1,num2)
-
-num1,num2 = num2,num1
-print("intercambiados otra forma: ",num1,num2)
-
-a=10
-b=20
-print(a,b)
-a = a + b;
-b = a - b;
-a = a - b;
-print(a,b)
-
 
 """
 Ejercicio 010
