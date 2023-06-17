@@ -106,7 +106,6 @@ print(a,b)
 
 # Escriba la solución aquí respetando los pasos descriptos en el enunciado
 """
-
 """
 Ejercicio 010
 Escribir un programa para resolver el siguiente problema:
@@ -140,7 +139,6 @@ Como pensarlo:
 
 # Escriba la solución aquí respetando los pasos descriptos en el enunciado
 """
-
 """
 Ejercicio 011
 Escribir un programa que permita resolver el siguiente problema:
@@ -148,8 +146,6 @@ Tres personas aportan diferente capital a una sociedad y desean saber el valor t
 Solicitar la carga por teclado del nombre de cada socio y su capital aportado, a partir de esto calcular e informar lo requerido previamente.
 
 """
-# Escriba la solución aquí
-
 """
 Ejercicio 012
 Escribir un programa en Python que solicite al usuario ingresar dos valores que representen las medidas en grados de dos ángulos interiores de un triángulo. Luego, calcular y mostrar por pantalla el valor en grados del ángulo restante.
@@ -160,9 +156,6 @@ Para pensar:
 
 ¿Qué sucedería si la suma de los dos ángulos ingresados es mayor o igual a 180 grados?
 """
-# Escriba la solución aquí
-
-
 """
 Ejercicio 013
 Escribir un programa para calcular el importe a cobrar por un vendedor, considerando su sueldo fijo de $200000 pesos más el 16% del monto total de ventas realizadas durante un mes.
@@ -184,8 +177,6 @@ Si se modifica el sueldo fijo del vendedor, entonces la fórmula utilizada para 
 
 ¿Hay que modificar el programa cada vez? ¿Cómo lo soluciono?
 """
-# Escriba la solución aquí: (la original o la modificada)
-
 """
 Ejercicio 014
 Escribir un programa que permita al usuario ingresar el ancho y largo de un terreno en metros, junto con el valor del metro cuadrado de tierra. El programa debe calcular y mostrar el valor total del terreno. Además, debe calcular la cantidad de metros de alambre necesarios para cercar completamente el terreno a tres alturas distintas.
@@ -193,14 +184,12 @@ Pensando los pasos para resolver el problema:
 
 Solicitar al usuario que ingrese el ancho del terreno en metros y almacenarlo en una variable. Solicitar al usuario que ingrese el largo del terreno en metros y almacenarlo en otra variable. Solicitar al usuario que ingrese el valor del metro cuadrado de tierra y almacenarlo en otra variable. Calcular el valor total del terreno multiplicando el ancho por el largo y luego multiplicando el resultado por el valor del metro cuadrado de tierra. Mostrar el valor total del terreno al usuario. Calcular la cantidad de metros de alambre necesarios para cercar el terreno a tres alturas distintas. Por ejemplo, se puede calcular la cantidad de alambre necesaria para cercar a 1 metro de altura, a 2 metros de altura y a 3 metros de altura. Para hacerlo, se debe sumar el perímetro del terreno (2 veces el ancho más 2 veces el largo) y luego multiplicarlo por la cantidad de alturas. Mostrar la cantidad de metros de alambre necesarios para cercar el terreno a las tres alturas distintas al usuario.
 """
-# Escriba la solución aquí
 """
-Ejercicio 015
+* Ejercicio 015
 Definición del problema: Una inmobiliaria paga a sus vendedores un salario base, más una comisión fija por cada venta realizada, más el 5% del valor de esas ventas. Realizar un programa que imprima el nombre del vendedor y el salario que le corresponde en un determinado mes.
 Se leen por teclado el nombre del vendedor, la cantidad de ventas que realizó y el valor total de las mismas.
 ¿Sobran datos? ¿Qué datos sobran?
 """
-# Escriba alguna solución aquí
 """
 * Ejercicio 016
 Escribir un programa que permita al usuario ingresar un período de tiempo en segundos. Luego, el programa debe convertir ese período de tiempo a una forma más legible y comprensible para el usuario, expresando el resultado en días, horas, minutos y segundos. El resultado se mostrará en pantalla en un mensaje que indique la cantidad de segundos ingresados y su equivalente en días, horas, minutos y segundos.
@@ -216,23 +205,8 @@ minutos = (segundos % 3600) // 60 # 60 segundos = 1 minuto
 
 segundos_restantes = segundos % 60 # segundos restantes
 """
-segundos = int(input("Ingrese la cantidad de segundos:   "))
-
-dias = segundos // 86400 # 86400 segundos = 1 día
-
-horas = (segundos % 86400) // 3600 # 3600 segundos = 1 hora
-
-minutos = (segundos % 3600) // 60 # 60 segundos = 1 minuto
-
-segundos_restantes = segundos % 60 # segundos restantes
-
-print(f'{segundos} equivalen a {dias} días, {horas} horas, {minutos} minutos, {segundos_restantes} segundos')
-print(f'{dias}:{horas}:{minutos}:{segundos_restantes}')
-
-
-
 """
-Ejercicio 017
+* Ejercicio 017
 ¡Ayuda! Se me rompió el programa que convierte una cantidad de dinero en la cantidad mínima de billetes y monedas necesarios. Tengo todas las instrucciones necesarias, pero están todas mezcladas. ¿Podrías ayudarme a ordenarlas de manera correcta para que funcione el programa como debería? A lo mejor se me perdieron algunas instrucciones, ¿podrías agregarlas?
 
 resto = cantidad_total
@@ -252,8 +226,6 @@ print(billetes_doscientos, "billetes de 200")print(billetescien,"billetesde100")
 print(billetes_cincuenta, "billetes de 50")print(billetesdiez,"billetesde10")
 print(billetes_cinco, "billetes de 5")print(billetesuno,"billetesde1")
 """
-# Escriba la solución aquí (¡Mucha suerte ordenando las instrucciones!)
-
 """
 Flujos de selección
 Ejercicio 018
@@ -270,84 +242,26 @@ Pensando los pasos para resolver el problema:
 
 (Para verificar si un número es par o impar, se puede utilizar el operador módulo (%). Si el resto de la división del número por 2 es 0, entonces el número es par. Si el resto de la división del número por 2 es 1, entonces el número es impar.)
 """
-# Escriba la solución aquí
-"""
-numero = int(input("Ingrese un número: "))
-print("El número ingresado es:", numero)
-if numero % 2 == 0:
-    print("El número es par")
-else:
-    print("El número es impar")
-
-El número ingresado es: 123456
-El número es par
-"""
-
 """
 Ejercicio 019
 Escribir un programa que permita ingresar dos números enteros e indicar si son iguales o distintos.
 """
-# Escriba la solución aquí
 """
 Ejercicio 020
 Escribir un programa que permita ingresar dos cadenas de caracteres e indicar si son iguales o distintas.
 """
-# Escriba la solución aquí
 """
 * Ejercicio 021
 Escribir un programa que permita ingresar dos números enteros e indicar si el primero es mayor, menor o igual al segundo.
 """
-
-# n1 = int(input("ingrese el primer número: "))
-# n2 = int(input("ingrese el segundo número: "))
-
-# if n1 > n2:
-#     print(" el mayor es: ", n1)
-# else:
-#     if n2 > n1:
-#         print(" el mayor es: ", n2)
-#     else:
-#         print(" son iguales ")
-    
-
 """
 * Ejercicio 022
 Escribir un programa que permita ingresar tres números enteros e indicar cual es el mayor.
 """
-n1 = int(input("ingrese el primer número: "))
-n2 = int(input("ingrese el segundo número: "))
-n3 = int(input("ingrese el tercer número: "))
-
-""" 
-if n1 > n2:
-    if n1 > n3:
-        print(" el mayor es: ", n1)
-    else:
-        print(" el mayor es: ", n3)
-else:
-    if n2 > n1:
-        if n2 > n3:
-            print(" el mayor es: ", n2)
-        else:
-            print(" el mayor es: ", n3) """
-
-mayor = n1
-
-if n2 > mayor:
-    mayor = n2
-
-if n3 > mayor:
-    mayor = n3
-
-print('el mayor es: ', mayor)
-
-mayor = max(n1,n2,n3) # solo funciona con números!!!
-print("el numero mayor es: ",mayor)
-
 """
-Ejercicio 023
+* Ejercicio 023
 Escribir un programa que permita ingresar tres números enteros y mostrar el mayor el menor y el valor que esta en medio.
-Ejemplo: Si se ingresan los números 5, 3 y 7, el programa debe mostrar el número 5 como el menor, el número 7 como el mayor y el número 3 como el que esta en medio.
+Ejemplo: Si se ingresan los números 5, 3 y 7, el programa debe mostrar el número 3 como el menor, el número 7 como el mayor y el número 5 como el que esta en medio.
 Otra vez se mezclaron las instrucciones, ¿podrías arreglarlas?
 
 numero_uno = int(input("Ingrese el primer número: "))
@@ -377,7 +291,7 @@ print("El mayor es: ", mayor)
 print("El medio es: ", medio)
 print("El menor es: ", menor)
 """
-# Escriba la solución aquí
+
 
 """
 Ejercicio 024
@@ -400,7 +314,7 @@ F 	F 	F
 
 En resumen, el conector "and" se utiliza para crear expresiones lógicas que requieren que todas las condiciones sean verdaderas para que la expresión sea verdadera.
 """
-edad = int(input("ongrese su edad: "))
+""" edad = int(input("ongrese su edad: "))
 altura = float(input("ingrese su altura: "))
 
 EDAD_MINIMA = 10
@@ -418,7 +332,7 @@ else:
     if not entraPorAltura:
         print("eres menor de 1.60, no puede entrar")
         
-
+"""
 
 
 """
@@ -445,15 +359,72 @@ Escribir un programa que permita ingresar la cantidad de invitados a una fiesta 
 """
 # Escriba la solución aquí
 """
-Ejercicio 027
+* Ejercicio 027
 Escribir un programa que permita ingresar una edad (entre 1 y 120 años), un género ('F'para mujeres, 'M' para hombres) y un nombre. En caso de haber ingresado valores erróneos (edad fuera de rango o género inválido), informar tal situación indicando el nombre de la persona. Si los datos están bien ingresados el programa debe indicar, sabiendo que las mujeres se jubilan con 60 años o más y los hombres con 65 años o más, si la persona está en edad de jubilarse.
 """
-# Escriba la solución aquí
+""" 
+JUBILACION_HOMBRE = 65
+JUBILACION_MUJER = 60
+
+edad = int(input("edad: "))
+genero = input("Género: ").upper()
+nombre = input("Nombre: ").title()
+
+if edad >= 1 and edad <= 120:
+    if genero == "M" or genero == "F":
+        if genero == "M":
+            se_jubila = edad >= JUBILACION_HOMBRE
+        else:
+            se_jubila = edad >= JUBILACION_MUJER
+    
+        if se_jubila:
+            print(f'{nombre} Género: {genero} se jubila')
+        else:
+            print(f'{nombre} Género: {genero} no se jubila')
+    else:
+        print(f'{genero} No es un género válido')
+else:
+    print(f'{edad} No es una edad válida') """
+
+    
 """
 Ejercicio 028
 Crear un programa que pida un número de mes (ejemplo 4) y escriba el nombre del mes en letras ("abril"). Verificar que el mes sea válido e informar en caso que no lo sea.
 """
-# Escriba la solución aquí
+
+import random
+# numero_mes = int(input("Número de mes: "))
+numero_mes = random.randint(1,12)
+
+if numero_mes == 1:
+    nombre = "Enero"
+elif numero_mes == 2:
+    nombre = "Febrero"
+elif numero_mes == 3:
+    nombre = "Marzo"
+elif numero_mes == 4:
+    nombre = "Abril"
+elif numero_mes == 5:
+    nombre = "Mayo"
+elif numero_mes == 6:
+    nombre = "Junio"
+elif numero_mes == 7:
+    nombre = "Julio"
+elif numero_mes == 8:
+    nombre = "Agosto"
+elif numero_mes == 9:
+    nombre = "Septiembre"
+elif numero_mes == 10:
+    nombre = "Octubre"
+elif numero_mes == 11:
+    nombre = "Noviembre"
+elif numero_mes == 12:
+    nombre = "Diciembre"
+else:
+    nombre = "error"
+
+print(f'El mes {numero_mes} es: {nombre}')
+
 """
 Ejercicio 029
 Escribir un programa que permita Ingresar las notas de los dos parciales de un alumno e indicar si promocionó, aprobó o debe recuperar. Si el valor de la nota no esta entre 0 y 10, debe informar un error.
