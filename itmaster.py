@@ -291,8 +291,6 @@ print("El mayor es: ", mayor)
 print("El medio es: ", medio)
 print("El menor es: ", menor)
 """
-
-
 """
 Ejercicio 024
 Para acceder a cierta atracción, es necesario cumplir con dos requisitos: tener al menos 10 años de edad y medir más de 1,60 metros.
@@ -314,27 +312,6 @@ F 	F 	F
 
 En resumen, el conector "and" se utiliza para crear expresiones lógicas que requieren que todas las condiciones sean verdaderas para que la expresión sea verdadera.
 """
-""" edad = int(input("ongrese su edad: "))
-altura = float(input("ingrese su altura: "))
-
-EDAD_MINIMA = 10
-ALTURA_MINIMA = 1.60
-
-entraPorEdad = edad > EDAD_MINIMA
-entraPorAltura = altura > ALTURA_MINIMA
-entra = entraPorEdad and entraPorAltura
-
-if entra:
-    print("puedes ingresar")
-else:
-    if not entraPorEdad:
-        print("eres menor de 10 añor, no puede entrar")
-    if not entraPorAltura:
-        print("eres menor de 1.60, no puede entrar")
-        
-"""
-
-
 """
 Ejercicio 025
 Para acceder a cierta atracción, alcanza con que se cumpla solamente una de las siguientes condiciones: ser mayor de 6 años o medir más de 1,50 metros.
@@ -352,79 +329,18 @@ F 	F 	F
 
 El conector "or" se utiliza para crear expresiones lógicas que requieren que al menos una condición sea verdadera para ser verdadera.
 """
-# Escriba la solución aquí
 """
 Ejercicio 026
 Escribir un programa que permita ingresar la cantidad de invitados a una fiesta y la cantidad de asientos disponibles en el salon. Debes indicar si alcanzan los asientos, Si los asientos no alcanzaran indicar cuántos faltan para que todos los invitados puedan sentarse.
 """
-# Escriba la solución aquí
 """
 * Ejercicio 027
 Escribir un programa que permita ingresar una edad (entre 1 y 120 años), un género ('F'para mujeres, 'M' para hombres) y un nombre. En caso de haber ingresado valores erróneos (edad fuera de rango o género inválido), informar tal situación indicando el nombre de la persona. Si los datos están bien ingresados el programa debe indicar, sabiendo que las mujeres se jubilan con 60 años o más y los hombres con 65 años o más, si la persona está en edad de jubilarse.
 """
-""" 
-JUBILACION_HOMBRE = 65
-JUBILACION_MUJER = 60
-
-edad = int(input("edad: "))
-genero = input("Género: ").upper()
-nombre = input("Nombre: ").title()
-
-if edad >= 1 and edad <= 120:
-    if genero == "M" or genero == "F":
-        if genero == "M":
-            se_jubila = edad >= JUBILACION_HOMBRE
-        else:
-            se_jubila = edad >= JUBILACION_MUJER
-    
-        if se_jubila:
-            print(f'{nombre} Género: {genero} se jubila')
-        else:
-            print(f'{nombre} Género: {genero} no se jubila')
-    else:
-        print(f'{genero} No es un género válido')
-else:
-    print(f'{edad} No es una edad válida') """
-
-    
 """
 Ejercicio 028
 Crear un programa que pida un número de mes (ejemplo 4) y escriba el nombre del mes en letras ("abril"). Verificar que el mes sea válido e informar en caso que no lo sea.
 """
-
-import random
-# numero_mes = int(input("Número de mes: "))
-numero_mes = random.randint(1,12)
-
-if numero_mes == 1:
-    nombre = "Enero"
-elif numero_mes == 2:
-    nombre = "Febrero"
-elif numero_mes == 3:
-    nombre = "Marzo"
-elif numero_mes == 4:
-    nombre = "Abril"
-elif numero_mes == 5:
-    nombre = "Mayo"
-elif numero_mes == 6:
-    nombre = "Junio"
-elif numero_mes == 7:
-    nombre = "Julio"
-elif numero_mes == 8:
-    nombre = "Agosto"
-elif numero_mes == 9:
-    nombre = "Septiembre"
-elif numero_mes == 10:
-    nombre = "Octubre"
-elif numero_mes == 11:
-    nombre = "Noviembre"
-elif numero_mes == 12:
-    nombre = "Diciembre"
-else:
-    nombre = "error"
-
-print(f'El mes {numero_mes} es: {nombre}')
-
 """
 Ejercicio 029
 Escribir un programa que permita Ingresar las notas de los dos parciales de un alumno e indicar si promocionó, aprobó o debe recuperar. Si el valor de la nota no esta entre 0 y 10, debe informar un error.
@@ -433,15 +349,12 @@ Escribir un programa que permita Ingresar las notas de los dos parciales de un a
     Se aprueba cuando las notas de ambos parciales son mayores o iguales a 4.
     Se debe recuperar cuando al menos una de las dos notas es menor a 4.
 """
-# Escriba la solución aquí
 """
 Ejercicio 030
 Escribir un programa que permita al usuario ingresar dos números enteros. La computadora debe indicar si el mayor es divisible por el menor.
 
 (Un número entero a es divisible por un número entero b cuando el resto de la división entre a y b es 0)
 """
-# Escriba la solución aquí
-
 """
 # constantes simbólicas
 COSTO_BASICO = 1000
@@ -455,7 +368,5 @@ costo = COSTO_BASICO + (COSTO_POR_PAGINA * num_paginas)
 # Escriba lo que falta de la solución aquí
 
 print("El costo del libro es: $", costo)
-
-Productos pagados de Colab - Cancela los contratos aquí
-*values: object, print(value, ..., sep=' ', end='\n', file=sys.stdout, flush=False) Prints the values to a stream, or to sys.stdout by default. Optional keyword arguments: file: a file-like object (stream); defaults to the current sys.stdout. sep: string inserted between values, default a space. end: string appended after the last value, default a newline. flush: whether to forcibly flush the stream., hint
 """
+

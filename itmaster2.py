@@ -30,6 +30,24 @@ costo = COSTO_BASICO + (COSTO_POR_PAGINA * num_paginas)
 # Escriba lo que falta de la solución aquí
 
 print("El costo del libro es: $", costo)
+# constantes simbólicas
+COSTO_BASICO = 1000
+COSTO_POR_PAGINA = 35.10
+COSTO_ENC_RUSTICA = 1200
+COSTO_ENC_ESPECIAL = 800
+
+num_paginas = int(input("Ingrese el número de páginas del libro: "))
+costo = COSTO_BASICO + (COSTO_POR_PAGINA * num_paginas)
+
+# Escriba lo que falta de la solución aquí
+encuadernacion = input("que encuadernación quiere? rustica(1) o especial(2)")
+
+if encuadernacion == "1":
+    costo += COSTO_ENC_RUSTICA
+else:
+    costo += COSTO_ENC_ESPECIAL
+
+print("El costo del libro es: $", costo)
 
 Ejercicio 032
 Una remisería requiere un sistema que calcule el precio de un viaje a partir de la cantidad de km que desea recorrer el usuario.
