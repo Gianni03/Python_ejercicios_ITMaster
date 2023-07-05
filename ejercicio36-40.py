@@ -1,8 +1,11 @@
-""" *Ejercicio 036
+"""
+*Ejercicio 036
 Escribir un programa que permita ingresar dos números enteros y la operación a realizar('+', '-', '*', '/'). Debe mostrarse el resultado para la operación ingresada. Considerar que no se puede dividir por cero (en ese caso mostrar el texto 'ERROR'). """
 
-# Escriba la solución aquí
+
+
 """ 
+
 Flujo de repetición.
 *Ejercicio 037
 Escribir un programa que muestre todos los números enteros del 1 al 5, y luego los mismos números pero en orden inverso. """

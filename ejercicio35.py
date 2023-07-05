@@ -1,4 +1,5 @@
-""" * Ejercicio 035
+"""
+* Ejercicio 035
 Existen dos reglas que identifican dos conjuntos de valores:
 
     a) El número es de un solo dígito.
@@ -13,11 +14,35 @@ Debe asignar el valor que corresponda a las variables booleanas:
     noEstaEnNinguno
 
 el valor Verdadero o Falso, según corresponda, para indicar si el valor número ingresado pertenece o no a cada conjunto. Definir un lote de prueba de varios números y probr el algoritmo, escribiendo los resultados.
-
-# Escriba la solución aquí
-
+"""
 
 esDeUnSoloDigito: True
 esImpar: True
 estaEnAmbos: True
-noEstaEnNinguno: False """
+noEstaEnNinguno: False 
+
+numero = int(input("Ingrese un número: "))
+if 0 <= numero < 10:
+    esDeUnSoloDigito = True
+else:
+    esDeUnSoloDigito = False
+    
+if numero % 2 != 0:
+    esImpar = True
+else:
+    esImpar = False
+    
+if esDeUnSoloDigito and esImpar:
+    estaEnAmbos = True
+    noEstaEnNinguno = False
+elif esDeUnSoloDigito or esImpar:
+    estaEnAmbos = False
+    noEstaEnNinguno = False
+else:
+    estaEnAmbos = False    
+    noEstaEnNinguno = True
+
+
+print(f'El número es de un solo dígito: {esDeUnSoloDigito} y es impar: {esImpar} y está en ambos: {estaEnAmbos} y no está en ninguno: {noEstaEnNinguno}')
+    
+

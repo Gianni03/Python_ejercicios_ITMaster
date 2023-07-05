@@ -10,10 +10,22 @@ Escribir un programa que reciba un importe e informe: el descuento y el precio n
 
 # Escriba la solución aquí """
 
-DESCUENTO_MENOR = 4.5
-DESCUENTO_MEDIO = 8
-DESCUENTO_MAYOR = 10.5
+DESCUENTO_MENOR = 0.045
+DESCUENTO_MEDIO = 0.08
+DESCUENTO_MAYOR = 0.105
 
 importe = int(input("Ingrese el valor de la compra: "))
 
 
+if importe < 5500:
+    descuento = importe * DESCUENTO_MENOR
+    precio = importe - descuento
+    print(f'Tuvo un descuento de {descuento}. El monto total es {precio}')
+elif importe >= 5500 and importe <= 10000:
+    descuento = importe * DESCUENTO_MEDIO
+    precio = importe - descuento    
+    print(f'Tuvo un descuento de {descuento}. El monto total es {precio}') 
+else:
+    descuento = importe * DESCUENTO_MAYOR
+    precio = importe - descuento
+    print(f'Tuvo un descuento de {descuento}. El monto total es {precio}')
