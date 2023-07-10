@@ -15,14 +15,18 @@ Debe asignar el valor que corresponda a las variables booleanas:
 
 el valor Verdadero o Falso, según corresponda, para indicar si el valor número ingresado pertenece o no a cada conjunto. Definir un lote de prueba de varios números y probr el algoritmo, escribiendo los resultados.
 """
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> d324c8f7416deb1f35d12423f3f34413ac739054
 
 esDeUnSoloDigito: True
 esImpar: True
 estaEnAmbos: True
 noEstaEnNinguno: False 
 
+<<<<<<< HEAD
 numero = int(input("Ingrese un numero: "))
 print("El numero ingresado es: ", numero)
 
@@ -31,11 +35,19 @@ if numero >= 0 and numero <= 9:
 else:
     esDeUnSoloDigito = False
 print("El numero es de un solo digito: ", esDeUnSoloDigito)
+=======
+numero = int(input("Ingrese un número: "))
+if 0 <= numero < 10:
+    esDeUnSoloDigito = True
+else:
+    esDeUnSoloDigito = False
+>>>>>>> d324c8f7416deb1f35d12423f3f34413ac739054
     
 if numero % 2 != 0:
     esImpar = True
 else:
     esImpar = False
+<<<<<<< HEAD
 print("El numero es impar: ", esImpar)  
 
 if esDeUnSoloDigito and esImpar:
@@ -53,3 +65,20 @@ print("El numero no esta en ninguno: ", noEstaEnNinguno)
 
     
 print(f'El número {numero} tiene las siguientes caracteristicas: \n esDeUnSoloDigito: {esDeUnSoloDigito} \n esImpar: {esImpar} \n estaEnAmbos: {estaEnAmbos} \n noEstaEnNinguno: {noEstaEnNinguno}')
+=======
+    
+if esDeUnSoloDigito and esImpar:
+    estaEnAmbos = True
+    noEstaEnNinguno = False
+elif esDeUnSoloDigito or esImpar:
+    estaEnAmbos = False
+    noEstaEnNinguno = False
+else:
+    estaEnAmbos = False    
+    noEstaEnNinguno = True
+
+
+print(f'El número es de un solo dígito: {esDeUnSoloDigito} y es impar: {esImpar} y está en ambos: {estaEnAmbos} y no está en ninguno: {noEstaEnNinguno}')
+    
+
+>>>>>>> d324c8f7416deb1f35d12423f3f34413ac739054
