@@ -1,13 +1,40 @@
-""" *Ejercicio 036
+"""
+*Ejercicio 036
 Escribir un programa que permita ingresar dos números enteros y la operación a realizar('+', '-', '*', '/'). Debe mostrarse el resultado para la operación ingresada. Considerar que no se puede dividir por cero (en ese caso mostrar el texto 'ERROR'). """
 
-# Escriba la solución aquí
+num1 = int(input("ingrese el primer número: "))
+num2 = int(input("ingrese el segundo número: "))
+signo = input("ingrese la operacion a realizar ( + , - , * , / ):")
+
+
+
+if signo == "+":
+    print(f'la suma de {num1} y {num2} es = a {num1 + num2}')
+elif signo == "-":
+    print(f'la resta de {num1} y {num2} es = a {num1 - num2}')
+elif signo == "*":
+    print(f'la multiplicación de {num1} y {num2} es = a {num1 * num2}')
+elif signo == "/":
+    if num2 == 0:
+        print("ERROR")
+    print(f'la division de {num1} y {num2} es = a {num1 / num2}')
+    
+
+
 """ 
+
 Flujo de repetición.
 *Ejercicio 037
 Escribir un programa que muestre todos los números enteros del 1 al 5, y luego los mismos números pero en orden inverso. """
 
-# Escriba la solución aquí
+numeros = [1,2,3,4,5]
+
+for numero in numeros:
+    print(numero)
+    
+numeros.reverse()
+for numero in numeros:
+    print(numero)
 
 """ *Ejercicio 038
 Escribir un programa que permita ingresar un número entero n. Debe mostrar los primeros 10 múltiplos de n.
@@ -26,12 +53,25 @@ n x 8 = 40
 n x 9 = 45
 n x 10 = 50 """
 
-# Escriba la solución aquí
+entero = int(input("ingrese un número entero: "))
+multiplo = 1
+while multiplo <= 10:
+    resultado = entero * multiplo
+    print(f'{entero} x {multiplo} = {resultado}')
+    multiplo += 1
+    
 
 """ *Ejercicio 039
 Escribir un programa para calcular e imprimir la suma de los números comprendidos entre 42 y 176 """
 
-# Escriba la solución aquí
+comienzo = 42
+final = 176
+sumaRango = 0 
+
+while comienzo != final +1:
+    sumaRango += comienzo
+    comienzo += 1
+print(f'La suma total de los numeros entre 42 y 176 es {sumaRango}')
 
 """ *Ejercicio 040
 Escribir un programa que permita ingresar dos numeros enteros a y b. El programa debe mostrar:

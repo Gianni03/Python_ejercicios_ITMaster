@@ -152,12 +152,31 @@ Escribir un programa que permita ingresar dos numeros enteros a y b. El programa
 Escribir un programa que lea números enteros hasta que se ingrese un 0, y muestre el máximo.
 
 # Escriba la solución aquí
-
+"""
+"""
 *Ejercicio 042
 Escribir un programa que lea números enteros hasta que se ingrese un 0, y muestre el promedio de los números ingresados.
 
-# Escriba la solución aquí
+"""
+import random   
 
+numero = random.randint(0, 3)
+suma = 0
+contador = 0
+while numero != 0:
+    suma += numero
+    contador += 1
+    numero = random.randint(0, 3)
+
+if(contador !=  0): 
+    promedio = suma / contador
+else:
+    promedio = None
+    print("el primer numero fue el 0")
+    
+print(f"aparecio un 0, antes se generaron {contador} numeros y el promedio es {promedio}")
+
+"""
 *Ejercicio 043
 Escribir un programa que lea números enteros hasta que se la suma de éstos sea mayor que 100, y muestre la cantidad de números ingresados.
 

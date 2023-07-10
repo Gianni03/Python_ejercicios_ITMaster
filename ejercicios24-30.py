@@ -189,15 +189,15 @@ num1 = int(input("ingresa un número: "))
 num2 = int(input("ingresa otro un número: "))
 
 if num1 > num2:
-  if num1 % num2 == 0:
-    print(f'ingresaste {num1} y {num2} donde {num1} es el mayor y es divisible por {num2}')
-  else:
-    print(f'ingresaste {num1} y {num2} donde {num1} es el mayor y no es divisible por {num2}')
+    if num1 % num2 == 0:
+        print(f'ingresaste {num1} y {num2} donde {num1} es el mayor y es divisible por {num2}')
+    else:
+        print(f'ingresaste {num1} y {num2} donde {num1} es el mayor y no es divisible por {num2}')
 elif num1 < num2:
-  if num2 % num1 == 0:
-    print(f'ingresaste {num1} y {num2} donde {num2} es el mayor y es divisible por {num1}')
-  else:
-    print(f'ingresaste {num1} y {num2} donde {num2} es el mayor y no es divisible por {num1}')
+    if num2 % num1 == 0:
+        print(f'ingresaste {num1} y {num2} donde {num2} es el mayor y es divisible por {num1}')
+    else:
+        print(f'ingresaste {num1} y {num2} donde {num2} es el mayor y no es divisible por {num1}')
 else:
     print(f'ingresaste {num1} y {num2} y son iguales')
 
