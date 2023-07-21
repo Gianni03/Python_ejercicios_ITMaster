@@ -43,7 +43,6 @@ Tiene la siguiente tarifa:
 Escribir un programa que permita ingresar la cantidad de km que desea recorrer el usuario y muestre el precio del viaje.
 
 # Escriba la solución aquí """
-
 """ * Ejercicio 033
 La farmacia Sindical efectúa descuentos a sus afiliados según el importe de la compra con la siguiente escala:
 
@@ -54,9 +53,7 @@ La farmacia Sindical efectúa descuentos a sus afiliados según el importe de la
 Escribir un programa que reciba un importe e informe: el descuento y el precio neto a cobrar, con mensajes aclaratorios.
 
 # Escriba la solución aquí """
-
-""" 
-* Ejercicio 034
+""" * Ejercicio 034
 Escribir un programa que calcule y muestre el sueldo neto de un empleado en base a su sueldo básico y su antigüedad en años. Si es soltero se le incrementa el sueldo en 5% del salario bruto por cada año de antigüedad, mientras que si es casado se le incrementa el sueldo en 7% del salario bruto por cada año de antigüedad. También se le realizan los siguientes descuentos:
 
     Jubilación: 11%
@@ -78,10 +75,8 @@ Descuentos:
     Sindicato - 999,99
 
 Sueldo Neto 999,99
-
-# Escriba la solución aquí
-
-* Ejercicio 035
+"""
+""" * Ejercicio 035
 Existen dos reglas que identifican dos conjuntos de valores:
 
     a) El número es de un solo dígito.
@@ -104,19 +99,18 @@ esDeUnSoloDigito: True
 esImpar: True
 estaEnAmbos: True
 noEstaEnNinguno: False
-
-*Ejercicio 036
+"""
+""" *Ejercicio 036
 Escribir un programa que permita ingresar dos números enteros y la operación a realizar('+', '-', '*', '/'). Debe mostrarse el resultado para la operación ingresada. Considerar que no se puede dividir por cero (en ese caso mostrar el texto 'ERROR').
 
 # Escriba la solución aquí
-
-Flujo de repetición.
-*Ejercicio 037
+"""
+""" Flujo de repetición. *Ejercicio 037
 Escribir un programa que muestre todos los números enteros del 1 al 5, y luego los mismos números pero en orden inverso.
 
 # Escriba la solución aquí
-
-*Ejercicio 038
+"""
+""" *Ejercicio 038
 Escribir un programa que permita ingresar un número entero n. Debe mostrar los primeros 10 múltiplos de n.
 Ejemplo
 
@@ -134,55 +128,35 @@ n x 9 = 45
 n x 10 = 50
 
 # Escriba la solución aquí
-
-*Ejercicio 039
+"""
+""" *Ejercicio 039
 Escribir un programa para calcular e imprimir la suma de los números comprendidos entre 42 y 176
 
 # Escriba la solución aquí
-
-*Ejercicio 040
+"""
+""" *Ejercicio 040
 Escribir un programa que permita ingresar dos numeros enteros a y b. El programa debe mostrar:
 
     La suma de los numeros pares entre a y b.
     El producto de los numeros impares entre a y b.
 
 # Escriba la solución aquí
-
-*Ejercicio 041
+"""
+""" *Ejercicio 041
 Escribir un programa que lea números enteros hasta que se ingrese un 0, y muestre el máximo.
 
 # Escriba la solución aquí
 """
-"""
-*Ejercicio 042
+""" *Ejercicio 042
 Escribir un programa que lea números enteros hasta que se ingrese un 0, y muestre el promedio de los números ingresados.
 
 """
-import random   
-
-numero = random.randint(0, 3)
-suma = 0
-contador = 0
-while numero != 0:
-    suma += numero
-    contador += 1
-    numero = random.randint(0, 3)
-
-if(contador !=  0): 
-    promedio = suma / contador
-else:
-    promedio = None
-    print("el primer numero fue el 0")
-    
-print(f"aparecio un 0, antes se generaron {contador} numeros y el promedio es {promedio}")
-
-"""
-*Ejercicio 043
+""" *Ejercicio 043
 Escribir un programa que lea números enteros hasta que se la suma de éstos sea mayor que 100, y muestre la cantidad de números ingresados.
 
 # Escriba la solución aquí
-
-*Ejercicio 044
+"""
+""" *Ejercicio 044
 Escribir un programa que permita leer dos números A y B (enteros positivos). Calcular el producto A * B por sumas sucesivas e imprimir el resultado.
 Ejemplo:
 
@@ -190,16 +164,15 @@ Ejemplo:
     3*4 = 3 + 3 + 3 + 3 (3 sumado 4 veces).
 
 # Escriba la solución aquí
-
-*Ejercicio 045
+"""
+""" *Ejercicio 045
 Escribir un programa que permita leer dos números naturales A y B. Calcular A elevado a la B mediante productos sucesivos y mostrar el resultado.
 Ejemplo:
 
     4^3 = 4 * 4 * 4 (4 multiplicado 3 veces).
     3^4 = 3 * 3 * 3 * 3 (3 multiplicado 4 veces).
-
-# Escriba la solución aquí
-
+"""
+"""
 *Ejercicio 046
 Escribir un programa que a partir de un número entero cant ingresado por el usuario permita cargar por teclado cant números enteros. La computadora debe mostrar cuál fue el mayor número y en qué posición apareció.
 
@@ -228,7 +201,8 @@ La misma debe ser ingresada tantas veces como sea necesario hasta que quede comp
     Las notas 1 y 3 no usan nunca.
     La nota 0 se reserva para los ausentes.
     Las notas válidas pueden ser un 2 o un valor entre 4 y 10.
-
+""" 
+"""
 # Escriba la solución aquí
 
 *Ejercicio 051
